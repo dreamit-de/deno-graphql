@@ -15,6 +15,7 @@
   "npm": {
     "specifiers": {
       "@dreamit/graphql-server": "@dreamit/graphql-server@3.0.0",
+      "@dreamit/graphql-server@3.0.0": "@dreamit/graphql-server@3.0.0",
       "body-parser": "body-parser@1.20.1",
       "express": "express@4.18.2",
       "graphql": "graphql@16.6.0",

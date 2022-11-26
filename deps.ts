@@ -6,6 +6,6 @@ export type {
    GraphQLServerResponse,
    MetricsClient,
 } from 'npm:@dreamit/graphql-server';
-export { GraphQLServer, JsonLogger } from 'npm:@dreamit/graphql-server';
+export { GraphQLServer, JsonLogger } from 'npm:@dreamit/graphql-server@3.0.0';
 export {} from 'npm:prom-client';
 export { buildSchema, GraphQLError, GraphQLSchema } from 'npm:graphql';
