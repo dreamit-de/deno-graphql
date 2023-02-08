@@ -28,8 +28,10 @@ async function handleRequest(request: Request): Promise<Response> {
       const metrics = await customGraphQLServer.getMetrics()
       logger.info(`Metrics are ${metrics}`)
       return response
-   } 
-   return new Response('{message:"Welcome to deno-graphql example. Please use POST method to send your GraphQL request to this API!"}');
+   }
+   return new Response(
+      '{message:"Welcome to deno-graphql example. Please use POST method to send your GraphQL request to this API!"}',
+   )
 }
 
 serve(handleRequest, { port: graphQLServerPort })
