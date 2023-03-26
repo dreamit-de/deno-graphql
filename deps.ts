@@ -1,4 +1,8 @@
-export { serve } from 'https://deno.land/std@0.181.0/http/server.ts'
+export {
+   JSON_CONTENT_TYPE_HEADER,
+   returnDataResponse,
+   startServer,
+} from 'https://raw.githubusercontent.com/sgohlke/deno-web/1.0.1/index.ts'
 export type {
    AggregateError,
    GraphQLRequestInfo,
