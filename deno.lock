@@ -21,51 +21,26 @@
   },
   "npm": {
     "specifiers": {
-      "@dreamit/graphql-server@3.3.0": "@dreamit/graphql-server@3.3.0_@sgohlke+graphql-prom-metrics@1.1.0__@sgohlke+graphql-server-base@1.0.0___graphql@16.6.0__prom-client@14.2.0__graphql@16.6.0_@sgohlke+graphql-server-base@1.0.0__graphql@16.6.0_graphql@16.6.0_prom-client@14.2.0",
-      "graphql": "graphql@16.6.0",
-      "prom-client": "prom-client@14.2.0"
+      "@dreamit/graphql-server@4.0.0": "@dreamit/graphql-server@4.0.0_@sgohlke+graphql-server-base@2.1.2__graphql@16.6.0_graphql@16.6.0",
+      "graphql": "graphql@16.6.0"
     },
     "packages": {
-      "@dreamit/graphql-server@3.3.0_@sgohlke+graphql-prom-metrics@1.1.0__@sgohlke+graphql-server-base@1.0.0___graphql@16.6.0__prom-client@14.2.0__graphql@16.6.0_@sgohlke+graphql-server-base@1.0.0__graphql@16.6.0_graphql@16.6.0_prom-client@14.2.0": {
-        "integrity": "sha512-u8qJ7Smvj0LvXvrvPvw/E9DqtoimpBI+OjKWp6Uei0fRlkYk8xXamIWle4vBSfM+cR35BFAvPh69XnnZw5SyzQ==",
+      "@dreamit/graphql-server@4.0.0_@sgohlke+graphql-server-base@2.1.2__graphql@16.6.0_graphql@16.6.0": {
+        "integrity": "sha512-nSNZFU2yD5BH0f35dxl+dwjwkE4mk1u9WNrS5jbv/A3/MpmA/zyMyXXtQl+IANhWRObQGK3ypSpjoVuddxLZLg==",
         "dependencies": {
-          "@sgohlke/graphql-prom-metrics": "@sgohlke/graphql-prom-metrics@1.1.0_@sgohlke+graphql-server-base@1.0.0__graphql@16.6.0_prom-client@14.2.0_graphql@16.6.0",
-          "@sgohlke/graphql-server-base": "@sgohlke/graphql-server-base@1.0.0_graphql@16.6.0",
+          "@sgohlke/graphql-server-base": "@sgohlke/graphql-server-base@2.1.2_graphql@16.6.0",
           "graphql": "graphql@16.6.0"
         }
       },
-      "@sgohlke/graphql-prom-metrics@1.1.0_@sgohlke+graphql-server-base@1.0.0__graphql@16.6.0_prom-client@14.2.0_graphql@16.6.0": {
-        "integrity": "sha512-WZZV958SEpBsoEdQ79LrPoM9UActY+CJi3NrAI5Ovb/a6CVk8Ls7RNIDYlMYRJld8twd3uN66c/dTVR8+wVSJA==",
-        "dependencies": {
-          "@sgohlke/graphql-server-base": "@sgohlke/graphql-server-base@1.0.0_graphql@16.6.0",
-          "prom-client": "prom-client@14.2.0"
-        }
-      },
-      "@sgohlke/graphql-server-base@1.0.0_graphql@16.6.0": {
-        "integrity": "sha512-B3rpa135XyzzCSazD3FgZQuirIqnaTkquaDrn260bI6B2NNtwYercjSop42V4M+jSUeJJSFzBWDZGiYLOmBoGw==",
+      "@sgohlke/graphql-server-base@2.1.2_graphql@16.6.0": {
+        "integrity": "sha512-LnUMEbs7fcKtvBO4FpoTWKYFEjChWa7Dm7m1sHriR6KvtFBTkloda89GKn2APhAPsDzXgpfotAWxaNyphtHQ0g==",
         "dependencies": {
           "graphql": "graphql@16.6.0"
         }
-      },
-      "bintrees@1.0.2": {
-        "integrity": "sha512-VOMgTMwjAaUG580SXn3LacVgjurrbMme7ZZNYGSSV7mmtY6QQRh0Eg3pwIcntQ77DErK1L0NxkbetjcoXzVwKw==",
-        "dependencies": {}
       },
       "graphql@16.6.0": {
         "integrity": "sha512-KPIBPDlW7NxrbT/eh4qPXz5FiFdL5UbaA0XUNz2Rp3Z3hqBSkbj0GVjwFDztsWVauZUWsbKHgMg++sk8UX0bkw==",
         "dependencies": {}
-      },
-      "prom-client@14.2.0": {
-        "integrity": "sha512-sF308EhTenb/pDRPakm+WgiN+VdM/T1RaHj1x+MvAuT8UiQP8JmOEbxVqtkbfR4LrvOg5n7ic01kRBDGXjYikA==",
-        "dependencies": {
-          "tdigest": "tdigest@0.1.2"
-        }
-      },
-      "tdigest@0.1.2": {
-        "integrity": "sha512-+G0LLgjjo9BZX2MfdvPfH+MKLCrxlXSYec5DaPYP1fe6Iyhf0/fSmJ0bFiZ1F8BT6cGXl2LpltQptzjXKWEkKA==",
-        "dependencies": {
-          "bintrees": "bintrees@1.0.2"
-        }
       }
     }
   }
