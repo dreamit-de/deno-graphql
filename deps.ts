@@ -2,7 +2,7 @@ export {
    JSON_CONTENT_TYPE_HEADER,
    returnDataResponse,
    startServer,
-} from 'https://raw.githubusercontent.com/sgohlke/deno-web/2.0.1/index.ts'
+} from 'https://raw.githubusercontent.com/sgohlke/deno-web/3.0.0/mod.ts'
 export type {
    AggregateError,
    GraphQLRequestInfo,
