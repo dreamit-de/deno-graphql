@@ -39,6 +39,7 @@
   },
   "npm": {
     "specifiers": {
+      "@dreamit/graphql-server-base@2.1.10": "@dreamit/graphql-server-base@2.1.10_graphql@16.8.0",
       "@dreamit/graphql-server@4.2.6": "@dreamit/graphql-server@4.2.6_@dreamit+graphql-server-base@2.1.10__graphql@16.8.0_graphql@16.8.0",
       "graphql": "graphql@16.8.0"
     },

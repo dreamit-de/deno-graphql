@@ -7,7 +7,6 @@ import {
 } from './deps.ts'
 import { userSchema, userSchemaResolvers } from './ExampleSchemas.ts'
 
-const graphQLServerPort = 3592
 const responseHeaders = new Headers(JSON_CONTENT_TYPE_HEADER)
 const logger = new JsonLogger('deno-graphql-server', 'user-service', false)
 
@@ -45,4 +44,6 @@ async function handleRequest(request: Request): Promise<Response> {
    }, responseHeaders)
 }
 
-startServer(handleRequest, { port: graphQLServerPort })
+export function startGraphQLServer(options: Deno.ServeOptions | Deno.ServeTlsOptions) {
+   startServer(handleRequest, options)
+}
