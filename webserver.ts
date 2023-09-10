@@ -26,8 +26,9 @@ async function handleRequest(request: Request): Promise<Response> {
          url: request.url,
          method: request.method,
       })
-      const metrics = await customGraphQLServer.getMetrics()
-      logger.info(`Metrics are ${metrics}`)
+      
+      // const metrics = await customGraphQLServer.getMetrics()
+      // logger.info(`Metrics are ${metrics}`)
 
       const response = new Response(
          JSON.stringify(graphQLResponse.executionResult),
