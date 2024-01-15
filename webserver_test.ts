@@ -4,7 +4,7 @@ import { startGraphQLServer } from './webserver.ts'
 
 Deno.test('Calling startPersonServer should return expected result', async () => {
    const abortController = new AbortController()
-   await startGraphQLServer({
+   const server = await startGraphQLServer({
       port: 7035,
       signal: abortController.signal,
    })
@@ -26,4 +26,5 @@ Deno.test('Calling startPersonServer should return expected result', async () =>
    assertEquals(responseJson.data.users, [userOne, userTwo])
 
    abortController.abort()
+   await server.finished
 })

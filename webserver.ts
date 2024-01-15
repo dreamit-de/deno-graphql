@@ -3,7 +3,6 @@ import {
    JSON_CONTENT_TYPE_HEADER,
    JsonLogger,
    returnDataResponse,
-   startServer,
 } from './deps.ts'
 import { userSchema, userSchemaResolvers } from './ExampleSchemas.ts'
 
@@ -44,6 +43,6 @@ async function handleRequest(request: Request): Promise<Response> {
    }, responseHeaders)
 }
 
-export function startGraphQLServer(options: Deno.ServeOptions | Deno.ServeTlsOptions) {
-   startServer(handleRequest, options)
+export function startGraphQLServer(options: Deno.ServeOptions | Deno.ServeTlsOptions): Deno.HttpServer {
+   return Deno.serve(options, handleRequest)
 }
