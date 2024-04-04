@@ -3,8 +3,8 @@
   "packages": {
     "specifiers": {
       "jsr:@sgohlke/deno-web@^8.2.3": "jsr:@sgohlke/deno-web@8.2.3",
-      "npm:@dreamit/graphql-server-base@2.3.0": "npm:@dreamit/graphql-server-base@2.3.0_graphql@16.8.1",
-      "npm:@dreamit/graphql-server@4.5.0": "npm:@dreamit/graphql-server@4.5.0_@dreamit+graphql-server-base@2.3.0__graphql@16.8.1_graphql@16.8.1",
+      "npm:@dreamit/graphql-server-base@2.3.1": "npm:@dreamit/graphql-server-base@2.3.1_graphql@16.8.1",
+      "npm:@dreamit/graphql-server@4.8.0": "npm:@dreamit/graphql-server@4.8.0_@dreamit+graphql-server-base@2.3.1__graphql@16.8.1_graphql@16.8.1",
       "npm:graphql": "npm:graphql@16.8.1"
     },
     "jsr": {
@@ -13,16 +13,16 @@
       }
     },
     "npm": {
-      "@dreamit/graphql-server-base@2.3.0_graphql@16.8.1": {
-        "integrity": "sha512-6/PgYHHkmBkQwub3hu6HQ3ufHXVN6cF8oVgzNskzCR+zXvZHYHLsdkAIqtqWC7i95fUaUxWPW1N6XywK2xQx+Q==",
+      "@dreamit/graphql-server-base@2.3.1_graphql@16.8.1": {
+        "integrity": "sha512-9vPrVceF1rLAAejcXgZaBWTWDhlkMBlphfb6+uaeR+u+e9D4RRspKUOTZaz29qZ5TaXVR6t3gRKbcPnf7o8XbQ==",
         "dependencies": {
           "graphql": "graphql@16.8.1"
         }
       },
-      "@dreamit/graphql-server@4.5.0_@dreamit+graphql-server-base@2.3.0__graphql@16.8.1_graphql@16.8.1": {
-        "integrity": "sha512-2lfXhB/1/xqoUdAX+cYWYY16LZAkpjFlmDjg6ghpXXRvqZQayCKo3OHO+S6zBs0BUumyC/F9MUiOGYBsgkrprw==",
+      "@dreamit/graphql-server@4.8.0_@dreamit+graphql-server-base@2.3.1__graphql@16.8.1_graphql@16.8.1": {
+        "integrity": "sha512-poJetxFUGwVpQGk9NaObUGE8VKS78YjknlTaNnGDDKkHQNSDcGQtcOuZ2flDVqEXPTFV5HlozH9zvoZPhwautQ==",
         "dependencies": {
-          "@dreamit/graphql-server-base": "@dreamit/graphql-server-base@2.3.0_graphql@16.8.1",
+          "@dreamit/graphql-server-base": "@dreamit/graphql-server-base@2.3.1_graphql@16.8.1",
           "graphql": "graphql@16.8.1"
         }
       },

@@ -9,12 +9,12 @@ export {
 
 export type {
    AggregateError
-} from 'npm:@dreamit/graphql-server@4.5.0'
-export { GraphQLServer, JsonLogger } from 'npm:@dreamit/graphql-server@4.5.0'
+} from 'npm:@dreamit/graphql-server@4.8.0'
+export { GraphQLServer, JsonLogger } from 'npm:@dreamit/graphql-server@4.8.0'
 export type {
    GraphQLRequestInfo,
    GraphQLServerRequest,
    GraphQLServerResponse,
    MetricsClient,
-} from 'npm:@dreamit/graphql-server-base@2.3.0'
+} from 'npm:@dreamit/graphql-server-base@2.3.1'
 export { buildSchema, GraphQLError, GraphQLSchema } from 'npm:graphql'
