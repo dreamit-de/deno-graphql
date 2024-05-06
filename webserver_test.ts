@@ -1,5 +1,5 @@
 import { userOne, userTwo, usersQuery } from "./ExampleSchemas.ts";
-import { assertEquals } from './deps.ts'
+import { assertEquals } from './dev_deps.ts'
 import { startGraphQLServer } from './webserver.ts'
 
 Deno.test('Calling startPersonServer should return expected result', async () => {

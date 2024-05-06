@@ -1,20 +1,16 @@
 export {
-   assertEquals,
-} from 'https://raw.githubusercontent.com/sgohlke/deno-deps/main/deps.ts'
-
-export {
    JSON_CONTENT_TYPE_HEADER,
    returnDataResponse,
-} from 'jsr:@sgohlke/deno-web@^8.2.3'
+} from 'jsr:@sgohlke/deno-web@8.2.4'
 
 export type {
    AggregateError
-} from 'npm:@dreamit/graphql-server@4.8.0'
-export { GraphQLServer, JsonLogger } from 'npm:@dreamit/graphql-server@4.8.0'
+} from 'npm:@dreamit/graphql-server'
+export { GraphQLServer, JsonLogger } from 'npm:@dreamit/graphql-server'
 export type {
    GraphQLRequestInfo,
    GraphQLServerRequest,
    GraphQLServerResponse,
    MetricsClient,
-} from 'npm:@dreamit/graphql-server-base@2.3.1'
+} from 'npm:@dreamit/graphql-server-base'
 export { buildSchema, GraphQLError, GraphQLSchema } from 'npm:graphql'
