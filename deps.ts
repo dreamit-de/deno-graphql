@@ -3,11 +3,9 @@ export {
    returnDataResponse,
 } from 'jsr:@sgohlke/deno-web'
 
-export type {
-   AggregateError
-} from 'npm:@dreamit/graphql-server'
 export { GraphQLServer, JsonLogger } from 'npm:@dreamit/graphql-server'
 export type {
+   AggregateError,
    GraphQLRequestInfo,
    GraphQLServerRequest,
    GraphQLServerResponse,

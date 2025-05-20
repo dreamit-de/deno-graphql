@@ -1,60 +1,99 @@
 {
-  "version": "3",
-  "packages": {
-    "specifiers": {
-      "jsr:@sgohlke/deno-web": "jsr:@sgohlke/deno-web@8.2.5",
-      "jsr:@std/assert": "jsr:@std/assert@0.224.0",
-      "jsr:@std/fmt@^0.224.0": "jsr:@std/fmt@0.224.0",
-      "jsr:@std/internal@^0.224.0": "jsr:@std/internal@0.224.0",
-      "npm:@dreamit/graphql-server": "npm:@dreamit/graphql-server@4.8.0_@dreamit+graphql-server-base@2.3.1__graphql@16.8.1_graphql@16.8.1",
-      "npm:@dreamit/graphql-server-base": "npm:@dreamit/graphql-server-base@2.3.1_graphql@16.8.1",
-      "npm:graphql": "npm:graphql@16.8.1"
+  "version": "5",
+  "specifiers": {
+    "jsr:@sgohlke/auth-helper@1.0.1": "1.0.1",
+    "jsr:@sgohlke/deno-web@*": "8.2.7",
+    "jsr:@std/assert@*": "1.0.13",
+    "jsr:@std/internal@^1.0.6": "1.0.7",
+    "npm:@dreamit/graphql-server-base@*": "3.0.1_@dreamit+funpara@1.3.2_graphql@16.11.0",
+    "npm:@dreamit/graphql-server-base@3.0.1": "3.0.1_@dreamit+funpara@1.3.2_graphql@16.11.0",
+    "npm:@dreamit/graphql-server@*": "5.0.1_@dreamit+funpara@1.3.2_@dreamit+graphql-server-base@3.0.1__@dreamit+funpara@1.3.2__graphql@16.11.0_graphql@16.11.0",
+    "npm:@dreamit/graphql-server@5.0.1": "5.0.1_@dreamit+funpara@1.3.2_@dreamit+graphql-server-base@3.0.1__@dreamit+funpara@1.3.2__graphql@16.11.0_graphql@16.11.0",
+    "npm:@types/node@*": "22.15.15",
+    "npm:graphql@*": "16.11.0",
+    "npm:graphql@16.8.1": "16.8.1"
+  },
+  "jsr": {
+    "@sgohlke/auth-helper@1.0.1": {
+      "integrity": "4756cba27777b889022a4e7609f71d85b718b994a45da347f31672702f197102"
     },
-    "jsr": {
-      "@sgohlke/deno-web@8.2.5": {
-        "integrity": "c6c0718d875f2d2c28628449f6aad2f7d88bee5520704944d2245247ab4b9c9f"
-      },
-      "@std/assert@0.224.0": {
-        "integrity": "8643233ec7aec38a940a8264a6e3eed9bfa44e7a71cc6b3c8874213ff401967f",
-        "dependencies": [
-          "jsr:@std/fmt@^0.224.0",
-          "jsr:@std/internal@^0.224.0"
-        ]
-      },
-      "@std/fmt@0.224.0": {
-        "integrity": "e20e9a2312a8b5393272c26191c0a68eda8d2c4b08b046bad1673148f1d69851"
-      },
-      "@std/internal@0.224.0": {
-        "integrity": "afc50644f9cdf4495eeb80523a8f6d27226b4b36c45c7c195dfccad4b8509291"
-      }
+    "@sgohlke/deno-web@8.2.7": {
+      "integrity": "c97252135bf22ca57f97652a818e512495fa1b0ba0dfa1de7ebcdbda958c609c",
+      "dependencies": [
+        "jsr:@sgohlke/auth-helper"
+      ]
     },
-    "npm": {
-      "@dreamit/graphql-server-base@2.3.1_graphql@16.8.1": {
-        "integrity": "sha512-9vPrVceF1rLAAejcXgZaBWTWDhlkMBlphfb6+uaeR+u+e9D4RRspKUOTZaz29qZ5TaXVR6t3gRKbcPnf7o8XbQ==",
-        "dependencies": {
-          "graphql": "graphql@16.8.1"
-        }
-      },
-      "@dreamit/graphql-server@4.8.0_@dreamit+graphql-server-base@2.3.1__graphql@16.8.1_graphql@16.8.1": {
-        "integrity": "sha512-poJetxFUGwVpQGk9NaObUGE8VKS78YjknlTaNnGDDKkHQNSDcGQtcOuZ2flDVqEXPTFV5HlozH9zvoZPhwautQ==",
-        "dependencies": {
-          "@dreamit/graphql-server-base": "@dreamit/graphql-server-base@2.3.1_graphql@16.8.1",
-          "graphql": "graphql@16.8.1"
-        }
-      },
-      "graphql@16.8.1": {
-        "integrity": "sha512-59LZHPdGZVh695Ud9lRzPBVTtlX9ZCV150Er2W43ro37wVof0ctenSaskPPjN7lVTIN8mSZt8PHUNKZuNQUuxw==",
-        "dependencies": {}
-      }
+    "@std/assert@1.0.13": {
+      "integrity": "ae0d31e41919b12c656c742b22522c32fb26ed0cba32975cb0de2a273cb68b29",
+      "dependencies": [
+        "jsr:@std/internal"
+      ]
+    },
+    "@std/internal@1.0.7": {
+      "integrity": "39eeb5265190a7bc5d5591c9ff019490bd1f2c3907c044a11b0d545796158a0f"
     }
   },
-  "remote": {},
+  "npm": {
+    "@dreamit/funpara@1.3.2": {
+      "integrity": "sha512-r0ogrKcVRwD7haeF7qz+sBFtpmFQyft1nPQV7s20Tv34dHEk1/Vbr/G54Gf6vz9Uvr4t0gkoesMG3WWjOutzXw=="
+    },
+    "@dreamit/graphql-server-base@3.0.1_@dreamit+funpara@1.3.2_graphql@16.11.0": {
+      "integrity": "sha512-/BqqMn72vO92nsVa5n8epZGZQ+VNsC4CXcljr//rEiybSxHTSCJAIUvSAae+CAnOHh+8tgIOAGqaTNeJsh49dg==",
+      "dependencies": [
+        "@dreamit/funpara",
+        "graphql@16.11.0"
+      ]
+    },
+    "@dreamit/graphql-server@5.0.1_@dreamit+funpara@1.3.2_@dreamit+graphql-server-base@3.0.1__@dreamit+funpara@1.3.2__graphql@16.11.0_graphql@16.11.0": {
+      "integrity": "sha512-Tl6uZ72R5QRoZ24+UNUUQkR18yN4dm4m/H4UalZoHFd6QZWb0S3I38U4gvt5/bKIZZjeOZDHS54+9OJD8H9QoQ==",
+      "dependencies": [
+        "@dreamit/funpara",
+        "@dreamit/graphql-server-base",
+        "graphql@16.11.0"
+      ],
+      "optionalDependencies": [
+        "@esbuild/linux-x64",
+        "@oxlint/linux-x64-gnu",
+        "@rollup/rollup-linux-x64-gnu"
+      ]
+    },
+    "@esbuild/linux-x64@0.25.4": {
+      "integrity": "sha512-6e0cvXwzOnVWJHq+mskP8DNSrKBr1bULBvnFLpc1KY+d+irZSgZ02TGse5FsafKS5jg2e4pbvK6TPXaF/A6+CA==",
+      "os": ["linux"],
+      "cpu": ["x64"]
+    },
+    "@oxlint/linux-x64-gnu@0.16.11": {
+      "integrity": "sha512-LbjKo4seS7m6rOzw/r9H3VLvnjhuo/fFuRJ8OG6pYCbkZNtChdhk88DFN8Qr0n8Qe9PFwweIvQxXBZK7IEUu6A==",
+      "os": ["linux"],
+      "cpu": ["x64"]
+    },
+    "@rollup/rollup-linux-x64-gnu@4.41.0": {
+      "integrity": "sha512-XMLeKjyH8NsEDCRptf6LO8lJk23o9wvB+dJwcXMaH6ZQbbkHu2dbGIUindbMtRN6ux1xKi16iXWu6q9mu7gDhQ==",
+      "os": ["linux"],
+      "cpu": ["x64"]
+    },
+    "@types/node@22.15.15": {
+      "integrity": "sha512-R5muMcZob3/Jjchn5LcO8jdKwSCbzqmPB6ruBxMcf9kbxtniZHP327s6C37iOfuw8mbKK3cAQa7sEl7afLrQ8A==",
+      "dependencies": [
+        "undici-types"
+      ]
+    },
+    "graphql@16.11.0": {
+      "integrity": "sha512-mS1lbMsxgQj6hge1XZ6p7GPhbrtFwUFYi3wRzXAC/FmYnyXMTvvI3td3rjmQ2u8ewXueaSvRPWaEcgVVOT9Jnw=="
+    },
+    "graphql@16.8.1": {
+      "integrity": "sha512-59LZHPdGZVh695Ud9lRzPBVTtlX9ZCV150Er2W43ro37wVof0ctenSaskPPjN7lVTIN8mSZt8PHUNKZuNQUuxw=="
+    },
+    "undici-types@6.21.0": {
+      "integrity": "sha512-iwDZqg0QAGrg9Rav5H4n0M64c3mkR59cJ6wQp+7C4nI0gsmExaedaYLNO44eT4AtBBwjbTiGPMlt2Md0T9H9JQ=="
+    }
+  },
   "workspace": {
     "dependencies": [
       "jsr:@sgohlke/deno-web@8.2.5",
       "jsr:@std/assert@0.224.0",
-      "npm:@dreamit/graphql-server-base@2.3.1",
-      "npm:@dreamit/graphql-server@4.8.2",
+      "npm:@dreamit/graphql-server-base@3.0.1",
+      "npm:@dreamit/graphql-server@5.0.1",
       "npm:graphql@16.8.1"
     ]
   }

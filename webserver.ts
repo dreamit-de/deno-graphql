@@ -1,10 +1,13 @@
 import {
    GraphQLServer,
-   JSON_CONTENT_TYPE_HEADER,
    JsonLogger,
    returnDataResponse,
 } from './deps.ts'
 import { userSchema, userSchemaResolvers } from './ExampleSchemas.ts'
+
+const JSON_CONTENT_TYPE_HEADER = {
+   'content-type': 'application/json',
+}
 
 const responseHeaders = new Headers(JSON_CONTENT_TYPE_HEADER)
 const logger = new JsonLogger('deno-graphql-server', 'user-service', false)
@@ -24,7 +27,7 @@ async function handleRequest(request: Request): Promise<Response> {
          url: request.url,
          method: request.method,
       })
-      
+
       // const metrics = await customGraphQLServer.getMetrics()
       // logger.info(`Metrics are ${metrics}`)
 
@@ -43,6 +46,8 @@ async function handleRequest(request: Request): Promise<Response> {
    }, responseHeaders)
 }
 
-export function startGraphQLServer(options: Deno.ServeOptions | Deno.ServeTlsOptions): Deno.HttpServer {
+export function startGraphQLServer(
+   options: Deno.ServeTcpOptions,
+): Deno.HttpServer {
    return Deno.serve(options, handleRequest)
 }
